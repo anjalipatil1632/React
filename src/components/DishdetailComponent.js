@@ -31,12 +31,12 @@ function RenderDish({dish}) {
         if(dish != null && dish.comments && dish.comments.length>0) {
             const comments = dish.comments.map((comment) => {
                 return (
-                    <div className="container">
+                    
                         <ul key={comment.id}>
                         <li className="mb-3">{comment.comment}</li>
                         <li className="mb-3">--{comment.author}, { (new Date(comment.date).toLocaleDateString('en-US', dateOptions))}</li>
                         </ul>
-                    </div>
+                    
                    )
             });
             return (
@@ -56,9 +56,11 @@ function RenderDish({dish}) {
 
   const  DishDetail = (props) => {
         return (
+            <div className="container">
             <div className="row">
                 <RenderDish dish={props.dish}/>
                 <RenderComments dish={props.dish}/>
+            </div>
             </div>
         );
 }
