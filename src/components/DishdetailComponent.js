@@ -6,6 +6,8 @@ import { Card, CardImg, CardText, CardBody,
 import { Link } from 'react-router-dom';
 import { Control,LocalForm,Errors } from 'react-redux-form';
 import Select from 'react-select';
+import { baseUrl } from '../shared/baseUrl';
+import { Loading } from './LoadingComponent';
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
@@ -17,7 +19,7 @@ function RenderDish({dish}) {
         return (
             
                 <Card>
-                    <CardImg width="100%" src={dish.image} alt={dish.name}/>
+                <CardImg top src={baseUrl + dish.image} alt={dish.name} />
                     <CardBody>
                         <CardTitle>{ dish.name }</CardTitle>
                         <CardText>{ dish.description }</CardText>
@@ -171,7 +173,25 @@ function RenderDish({dish}) {
 }
 
   const  DishDetail = (props) => {
-      if(props.dish!=null){
+    if (props.isLoading) {
+        return(
+            <div className="container">
+                <div className="row">            
+                    <Loading />
+                </div>
+            </div>
+        );
+    }
+    else if (props.errMess) {
+        return(
+            <div className="container">
+                <div className="row">            
+                    <h4>{props.errMess}</h4>
+                </div>
+            </div>
+        );
+    }
+    else if (props.dish != null) 
         return (
             <div className="container">
                 <div className="row">
@@ -200,16 +220,6 @@ function RenderDish({dish}) {
                 </div>
         );
       }
-      else{
-        return(
-            <div></div>
-           );
-      }
-
-     
-}
-
-
-
+      
 
 export default DishDetail;   
