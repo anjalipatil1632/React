@@ -44,6 +44,7 @@ function RenderCard({item, isLoading, errMess}) {
                         <RenderCard item={props.leader} />
                     </div>
                 </div>
+                <br></br>
             </div>
         );
     }
