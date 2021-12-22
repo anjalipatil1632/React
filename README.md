@@ -1,4 +1,4 @@
-To Run
+###To Run
 At any convenient location on your computer, create a new folder named mongo-server and inside it craete data folder, and move to mongo-server folder. Move to this folder in your terminal window, and type the following at the command prompt/git bash to start the server:
 
 mongod --dbpath=data --bind_ip 127.0.0.1
@@ -10,6 +10,9 @@ Run npm start
 Download the Project Move to this folder in your terminal window, and type the following at the command prompt/git bash to start the server: 
 
 install yarn and run yarn start
+
+To check mongo db
+Run mongo
 
 ---------------------------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
