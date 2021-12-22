@@ -102,7 +102,7 @@ import { FadeTransform, Fade, Stagger } from 'react-animation-components';
                         <Row className="form-group">
                             <Col>
                             <Label htmlFor="rating">Rating</Label>
-                            <Control.select model=".rating" id="rating" className="form-control">
+                            <Control.select model=".rating" id="rating" className="form-control" defaultValue="1">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
 
+
+
 function RenderMenuItem({ dish, deleteFavorite }) {
     return(
         <Media tag="li">
@@ -52,6 +54,7 @@ const Favorites = (props) => {
         });
 
         return(
+            
             <div className="container">
                 <div className="row">
                     <Breadcrumb>
