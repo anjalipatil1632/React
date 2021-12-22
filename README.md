@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### To Run
+
+At any convenient location on your computer, create a new folder named json-server, and move to this folder.
+Download the db.json file provided above to this folder.
+Move to this folder in your terminal window, and type the following at the command prompt/git bash to start the server:
+
+json-server --watch db.json -p 3001 -d 2000
+
+Download the Project
+Move to this folder in your terminal window, and type the following at the command prompt/git bash to start the server:
+install yarn and run yarn start
+
