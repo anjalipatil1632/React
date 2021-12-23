@@ -4,6 +4,7 @@ Download this project
 (if you are using diff firebase roject make sure to update update the FIrebase configuration in the config.js file)
 yarn install then yarn start
 
+To check backend firebase--https://console.firebase.google.com/project/restaurant-webapp-server/
 
 
 
