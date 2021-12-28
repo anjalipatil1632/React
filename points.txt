@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=NemyDIUcC64
+
+.NET Core WEBAPI-http://localhost:60671/api/DCandidate
