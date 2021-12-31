@@ -107,6 +107,7 @@ C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\Rea
 C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\React-CRUD-with-Asp.Net-Core-Web-API-master\WebAPI\WebAPI\obj\Debug\netcoreapp3.0\staticwebassets\WebAPI_.netcore.StaticWebAssets.xml
 C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\React-CRUD-with-Asp.Net-Core-Web-API-master\WebAPI\WebAPI\obj\Debug\netcoreapp3.0\scopedcss\bundle\WebAPI_.netcore.styles.css
 C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\React-CRUD-with-Asp.Net-Core-Web-API-master\WebAPI\WebAPI\obj\Debug\netcoreapp3.0\WebAPI_.netcore.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\React-CRUD-with-Asp.Net-Core-Web-API-master\WebAPI\WebAPI\obj\Debug\netcoreapp3.0\WebAPI_.netcore.csproj.CopyComplete
 C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\React-CRUD-with-Asp.Net-Core-Web-API-master\WebAPI\WebAPI\obj\Debug\netcoreapp3.0\WebAPI_.netcore.dll
 C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\React-CRUD-with-Asp.Net-Core-Web-API-master\WebAPI\WebAPI\obj\Debug\netcoreapp3.0\WebAPI_.netcore.pdb
 C:\Users\Administrator\Downloads\React-CRUD-with-Asp.Net-Core-Web-API-master\React-CRUD-with-Asp.Net-Core-Web-API-master\WebAPI\WebAPI\obj\Debug\netcoreapp3.0\WebAPI_.netcore.genruntimeconfig.cache

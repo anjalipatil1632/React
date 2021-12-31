@@ -1,3 +1,16 @@
 https://www.youtube.com/watch?v=NemyDIUcC64
+https://github.com/CodAffection/React-CRUD-with-Asp.Net-Core-Web-API
 
 .NET Core WEBAPI-http://localhost:60671/api/DCandidate
+
+
+Free webapi https://api.randomuser.me/
+
+
+asp.net webapi-https://www.youtube.com/watch?v=CbSKr7OeOWA
+https://gitlab.com/faisalcse1/demo-project/-/blob/master/WebApiDemo/WebApiDemo
+
+http://localhost:56585/api/Dcandidate
+
+add-migration initial
+update-database
