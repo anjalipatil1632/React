@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import * as actions from "../actions/dCandidate";
 import { Grid, Paper, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, withStyles, ButtonGroup, Button } from "@material-ui/core";
 import DCandidateForm from "./DCandidateForm";
+import SearchBox from "./search";
+
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { useToasts } from "react-toast-notifications";
@@ -42,6 +44,8 @@ const DCandidates = ({ classes, ...props }) => {
                     <DCandidateForm {...({ currentId, setCurrentId })} />
                 </Grid>
                 <Grid item xs={6}>
+                 {/* <SearchBox placeholder="Enter country name ..." handleChange={(e) => console.log(e.target.value)}/>  */}
+
                     <TableContainer>
                         <Table>
                             <TableHead className={classes.root}>
