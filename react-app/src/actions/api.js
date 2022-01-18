@@ -3,6 +3,7 @@ import axios from "axios";
 //const baseUrl = "http://localhost:60671/api/"
 const baseUrl = "http://localhost:56585/api/"
 //const baseUrl = "https://34.195.220.17:1204/api/";
+//const baseUrl = "http://34.195.220.17:120/api/";
 
  export default {
 
