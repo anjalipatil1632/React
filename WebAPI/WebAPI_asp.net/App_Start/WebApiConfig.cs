@@ -19,7 +19,8 @@ namespace WebAPI_asp.net
             //var cros = new EnableCorsAttribute("*", "*", "*");
             //config.EnableCors(cros);
 
-
+            config.Filters.Add(new RequireHttpsAttribute());
+            
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
