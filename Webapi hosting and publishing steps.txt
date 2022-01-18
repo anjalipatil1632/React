@@ -1,0 +1,84 @@
+-create webapi in vs
+-in IIS manager,
+	-click on site -add website -five site name -select ipaddress -give unique port no -ok
+	-go in Application pool - select ur site -right click -advance setting -make identity "Network service"
+
+-In sql server
+-If you opt to use this method, you need to take into consideration that everytime you add a new database, you will need to go and configure the permissions for that database. It can become quite a tedious process if you need to configure permissions for databases on a weekly basis.
+Open SQL Server Management Studio (shortcut: Start -> Run -> ssms)
+Connect when prompted.
+Expand Security and then expand Logins.
+If you don't have the network service listed (should be NT AUTHORITY\NETWORK SERVICE):
+Right-click on the Logins folder and select New Login.
+At the top, in the 'Login Name' field, enter NETWORK SERVICE. If it refuses to accept that, try entering NT AUTHORITY\NETWORK SERVICE.
+Now select the Server Roles tab on the left.
+You can tick any role you like, but for me I will give it 'public' access.
+Now select the User Mapping tab on the left.
+Tick all the databases you want to allow this service account to access.
+In the Schema column for each selected database, set the value to dbo (or whatever schema you are using in your database).
+Then, select one database row at a time and set the following permissions for it:
+db_datareader
+db_datawriter
+public
+Now click OK.
+If you do have the network service account listed, edit that login entry and then follow steps (5 - 9) above.
+That's it for the engine-level. You still need to add the service account to each and every database that you have selected initially as in step 6 above. So:
+
+Expand Databases on the left.
+Expand the Security folder and then expand Users.
+The service account should be listed there. Right-click and Properties on the service account (for us, NT AUTHORITY\NETWORK SERVICE).
+Select the Securables tab on the left.
+Click on the Search button.
+Select 'Specific Objects' and click OK.
+Now click the Object Types button.
+Scroll down and tick Schemas. Click OK.
+In the textbox below, enter the schema you are giving access for (the same as Step 7 above). In our case, it will be dbo. Click OK.
+At the bottom, select all the permissions you want to give for that database. In my case, I need quite extensive access to my database so I will be selecting these permissions:
+Alter
+Control
+Create Sequence
+Delete
+Execute
+Insert
+References
+Select
+Update
+Now click OK.
+Repeat the above steps for each and every database that you have selected.
+
+Server-wide Ac
+
+same in below link:
+https://www.codeproject.com/Articles/674930/Configuring-IIS-ASP-NET-and-SQL-Server
+
+
+-In vs 
+	-click on webapi project -publish 
+	-In profile , Click on downarrow -select <new profile>
+	-In connectction -server=localhost -sitename=sitename that u created in iis -validate connection -next
+	-configuration-release -next-publish
+
+if u get pipeline error- go in control panel- program features -turn on and of -confirm internet info services are checks and inside that check .net 4.5 
+	 
+
+
+netsh http add iplisten 10.201.111.222-listen hhtp of this ip address
+
+netsh http show iplisten
+
+netsh http delete iplisten ipaddress=10.201.111.222
+
+iisreset
+
+https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule
+
+
+
+To make https enable in webapi:
+https://csharp-video-tutorials.blogspot.com/2016/09/aspnet-web-api-enable-https.html
+
+to enable https in iis
+https://onlinehelp.coveo.com/en/ces/7.0/administrator/enabling_ssl_in_iis.html (just add new port with https)
+
+then create rule with that port in windows defender firewall with advance security
+
