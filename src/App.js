@@ -1,11 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Display from './components/display'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Display from './components/displaybtn/display';
+import Header from './components/Header/header';
+import Services from './components/Services';
+import Home from './components/home';
 
 function App() {
   return (
     <div className="App">
-     <Display/>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path='/' exact element={<Home/>} />
+        <Route path='/buttons' element={<Display/>} /> 
+        <Route path='/services' element={<Services/>} />
+        {/* <Route path='/contact-us' element={Contact} />
+        <Route path='/sign-up' element={SignUp} /> */}
+      </Routes>
+    </Router>
+    
     </div>
   );
 }
