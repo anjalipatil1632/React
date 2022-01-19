@@ -78,7 +78,10 @@ To make https enable in webapi:
 https://csharp-video-tutorials.blogspot.com/2016/09/aspnet-web-api-enable-https.html
 
 to enable https in iis
-https://onlinehelp.coveo.com/en/ces/7.0/administrator/enabling_ssl_in_iis.html (just add new port with https)
+https://onlinehelp.coveo.com/en/ces/7.0/administrator/enabling_ssl_in_iis.html 
+https://stackoverflow.com/questions/54362780/error-your-connection-to-this-site-is-not-private-asp-net-mvc5#:~:text=In%20my%20case%2C%20it%20solved,3%2D%20Enable%20Anonymous%20Authentication.
+https://docs.microsoft.com/en-US/iis/manage/configuring-security/how-to-set-up-ssl-on-iis
+
 
 then create rule with that port in windows defender firewall with advance security
 
